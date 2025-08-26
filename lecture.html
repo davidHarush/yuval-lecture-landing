@@ -2,82 +2,80 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>להיות שונה זו לא קללה – יובל מעתוק</title>
-  <meta name="description" content="דף נחיתה להרצאה 'להיות שונה זו לא קללה' של יובל מעתוק – תובנות, קהלי יעד והזמנה." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <div style="font-weight:700">להיות שונה זו לא קללה</div>
+      <div class="brand">להיות שונה זו לא קללה</div>
       <nav class="nav">
         <a href="index.html">דף יובל</a>
-        <a href="lecture.html" class="active">דף ההרצאה</a>
+        <a href="lecture.html" class="active">הרצאה</a>
       </nav>
     </header>
 
     <section class="hero">
       <h1>להיות שונה זו לא קללה</h1>
-      <p>הרצאה מרגשת וקלילה על חוסן, קבלה ואמונה בחלומות.</p>
+      <p>הרצאה מרתקת על קבלה, חוסן והשראה – עם כלים של ממש.</p>
       <div class="cta-row">
-        <a class="button" href="#contact">להזמנה/השארת פרטים</a>
-        <a class="button alt" href="index.html">חזרה לדף יובל</a>
+        <a class="button" href="#contact">הזמנה</a>
+        <a class="button alt" href="index.html">חזרה</a>
       </div>
     </section>
 
-    <section class="grid" style="margin-top:16px">
-      <div class="col-6 card">
-        <h2 style="margin-top:0">מה תקבלו</h2>
+    <section class="grid" style="margin-top:24px">
+      <div class="col-6 card reveal">
+        <h2>מה מרוויחים</h2>
         <ul class="list">
-          <li>כלים פרקטיים לחיזוק צוותים סביב שונות וגיוון</li>
-          <li>סיפור אישי שמחבר – בין דמעות לחיוך</li>
-          <li>מסרים על קבלה, נחישות ואמפתיה</li>
+          <li>כלים לחיזוק צוותים סביב שונות</li>
+          <li>סיפור שממחבר ומעשיר</li>
+          <li>מסרים של אמפתיה ונחישות</li>
         </ul>
       </div>
-      <div class="col-6 card">
-        <h2 style="margin-top:0">למי זה מתאים</h2>
+      <div class="col-6 card reveal">
+        <h2>למי זה מתאים</h2>
         <ul class="list">
-          <li>ארגונים וימי עיון (HR/DEI/הנהלות)</li>
+          <li>ארגונים וימי עיון</li>
           <li>מוסדות חינוך וקהילה</li>
-          <li>עמותות בתחום הצרכים המיוחדים</li>
+          <li>עמותות וארגונים חברתיים</li>
         </ul>
       </div>
     </section>
 
-    <section id="contact" class="card" style="margin-top:16px">
-      <h2 style="margin-top:0">השאירו פרטים</h2>
-      <!-- Replace 'your-id' with your Formspree form ID -->
+    <section id="contact" class="card reveal" style="margin-top:24px">
+      <h2>השאר פרטים</h2>
       <form action="https://formspree.io/f/your-id" method="POST">
         <div class="grid">
           <div class="col-6">
             <label>שם מלא</label>
-            <input name="name" required style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a2c36;background:#101218;color:#fff" />
+            <input name="name" required style="..."/>
           </div>
           <div class="col-6">
             <label>אימייל</label>
-            <input name="email" type="email" required style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a2c36;background:#101218;color:#fff" />
+            <input name="email" type="email" required style="..."/>
           </div>
           <div class="col-6">
             <label>טלפון</label>
-            <input name="phone" style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a2c36;background:#101218;color:#fff" />
+            <input name="phone" style="..."/>
           </div>
           <div class="col-6">
             <label>תאריך רצוי</label>
-            <input name="date" type="date" style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a2c36;background:#101218;color:#fff" />
+            <input name="date" type="date" style="..."/>
           </div>
           <div class="col-12">
             <label>הערות</label>
-            <textarea name="notes" rows="4" style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a2c36;background:#101218;color:#fff"></textarea>
+            <textarea name="notes" rows="4" style="..."></textarea>
           </div>
         </div>
         <div class="cta-row" style="margin-top:12px">
           <button class="button" type="submit">שליחה</button>
-          <a class="button alt" href="index.html">חזרה לדף יובל</a>
+          <a class="button alt" href="index.html">חזרה</a>
         </div>
       </form>
-      <p style="color:#b7bcc8;font-size:13px;margin-top:8px">
-        בלי שרת? ניתן להשתמש ב-Formspree (חינמי בסיסי): החלף את ה-action למזהה הטופס שלך.
+      <p style="color: var(--muted); font-size:13px; margin-top:8px">
+        אין שרת? ניתן להשתמש ב-Formspree (חינמי בסיסי) — החלף את הקישור לפורמספר שלך.
       </p>
     </section>
 
