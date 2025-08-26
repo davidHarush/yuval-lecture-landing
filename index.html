@@ -3,50 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>יובל מעתוק – דף מרצה מקצועי</title>
-  <meta name="description" content="מסע אישי על שונות, קבלה והגשמה עם יובל מעתוק - הרצאות מעוררות השראה">
+  <title>יובל מעתוק</title>
+  <meta name="description" content="מסע אישי על שונות, קבלה והגשמה">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <!-- Loading animation -->
-  <style>
-    .page-loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      opacity: 1;
-      transition: opacity 0.5s ease;
-    }
-    .page-loader.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-    .loader-content {
-      text-align: center;
-      color: white;
-    }
-    .spinner {
-      width: 50px;
-      height: 50px;
-      border: 3px solid rgba(255,255,255,0.3);
-      border-top: 3px solid white;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 0 auto 20px;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
 </head>
 <body>
   <!-- Page Loader -->
@@ -54,7 +16,7 @@
     <div class="loader-content">
       <div class="spinner"></div>
       <h3>יובל מעתוק</h3>
-      <p>מעבד את הדף המקצועי...</p>
+      <p>טוען...</p>
     </div>
   </div>
   
@@ -62,47 +24,47 @@
   <div class="scroll-indicator">
     <div class="scroll-progress" id="scrollProgress"></div>
   </div>
-
+  
   <div class="container loading">
     <header class="header">
-      <div class="brand">יובל מעתוק ✨</div>
+      <div class="brand">יובל מעתוק</div>
       <nav class="nav">
-        <a href="index.html" class="active">דף יובל</a>
+        <a href="index.html" class="active">בית</a>
         <a href="lecture.html">הרצאה</a>
       </nav>
     </header>
 
     <section class="hero">
       <h1>יובל מעתוק</h1>
-      <p>🌟 מסע אישי על שונות, קבלה והגשמה – עם חיוך ויד פתוחה 🌟</p>
+      <p>מסע אישי על שונות, קבלה והגשמה</p>
       <div class="cta-row">
-        <a class="button" href="lecture.html">📚 לעמוד ההרצאה</a>
-        <a class="button alt" href="#gallery">🖼️ גלריה</a>
+        <a class="button" href="lecture.html">הרצאה</a>
+        <a class="button alt" href="#gallery">גלריה</a>
       </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="grid" style="margin-top: 32px;">
+    <section class="grid" style="margin-top: 40px;">
       <div class="col-4 card reveal">
         <div class="stat-number" data-target="100">0</div>
-        <div class="stat-label">הרצאות מעוררות השראה</div>
+        <div class="stat-label">הרצאות</div>
       </div>
       <div class="col-4 card reveal">
         <div class="stat-number" data-target="50">0</div>
-        <div class="stat-label">ארגונים שותפים</div>
+        <div class="stat-label">ארגונים</div>
       </div>
       <div class="col-4 card reveal">
         <div class="stat-number" data-target="1000">0</div>
-        <div class="stat-label">משתתפים מרוצים</div>
+        <div class="stat-label">משתתפים</div>
       </div>
     </section>
 
-    <section id="gallery" class="card reveal" style="margin-top: 32px">
-      <h2>🖼️ גלריית תמונות</h2>
+    <section id="gallery" class="card reveal" style="margin-top: 40px">
+      <h2>גלריית תמונות</h2>
       <div class="carousel" aria-label="גלריית תמונות">
         <div class="carousel-track" id="track">
           <div class="carousel-slide">
-            <img src="assets/yu1.jpeg" alt="יובל במסגרת הרצאה מעוררת השראה">
+            <img src="assets/yu1.jpeg" alt="יובל במסגרת הרצאה">
           </div>
           <div class="carousel-slide">
             <img src="assets/yu2.jpeg" alt="יובל בפעילות קהילתית">
@@ -123,30 +85,30 @@
       </div>
     </section>
 
-    <section class="grid" style="margin-top: 32px">
+    <section class="grid" style="margin-top: 40px">
       <div class="col-6 card reveal">
-        <h2>💫 על יובל</h2>
-        <p style="color: var(--muted); margin-bottom: 16px;">גדלה לצד אח תאום עם מוגבלות – ויצאה מזה עם כוח ונחישות.</p>
+        <h2>על יובל</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 16px;">גדלה לצד אח תאום עם מוגבלות – ויצאה מזה עם כוח ונחישות.</p>
         <div class="feature-list">
           <div class="feature-item">
-            <span class="feature-icon">🎯</span>
+            <span class="feature-icon">•</span>
             <span>התמחות בנושאי שונות וקבלה</span>
           </div>
           <div class="feature-item">
-            <span class="feature-icon">💪</span>
+            <span class="feature-icon">•</span>
             <span>ניסיון אישי עמוק וממשי</span>
           </div>
           <div class="feature-item">
-            <span class="feature-icon">❤️</span>
+            <span class="feature-icon">•</span>
             <span>גישה חמה ומקצועית</span>
           </div>
         </div>
       </div>
       <div class="col-6 card reveal">
-        <h2>🌟 נושאים מרכזיים</h2>
+        <h2>נושאים מרכזיים</h2>
         <ul class="list">
           <li>שונות היא כוח ולא מגבלה</li>
-          <li>בניית חוסן רגשי עם חיוך</li>
+          <li>בניית חוסן רגשי</li>
           <li>פיתוח אמפתיה וקבלה</li>
           <li>כלים מעשיים לשינוי תפיסות</li>
           <li>יצירת סביבה תומכת ומקבלת</li>
@@ -155,34 +117,34 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="card reveal" style="margin-top: 32px">
-      <h2>💬 מה אומרים עליי</h2>
+    <section class="card reveal" style="margin-top: 40px">
+      <h2>מה אומרים</h2>
       <div class="testimonials">
         <div class="testimonial">
           <div class="testimonial-text">"הרצאה מעוררת השראה שממש שינתה את התפיסה שלנו כארגון"</div>
-          <div class="testimonial-author">- מנכ"ל חברה מובילה</div>
+          <div class="testimonial-author">מנכ"ל חברה מובילה</div>
         </div>
         <div class="testimonial">
           <div class="testimonial-text">"יובל הצליחה לחבר בין הלב לשכל בצורה מרגשת ומקצועית"</div>
-          <div class="testimonial-author">- רכזת חינוכית</div>
+          <div class="testimonial-author">רכזת חינוכית</div>
         </div>
       </div>
     </section>
 
-    <section class="card reveal" style="margin-top: 32px">
-      <h2>📞 להזמנת הרצאה</h2>
-      <p style="color: var(--muted); margin-bottom: 24px;">מעבר לעמוד ההרצאה להזמנה בטופס נוח ומהיר</p>
+    <section class="card reveal" style="margin-top: 40px">
+      <h2>הזמנת הרצאה</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 24px;">מעבר לעמוד ההרצאה להזמנה בטופס נוח ומהיר</p>
       <div class="cta-row">
-        <a class="button" href="lecture.html">🎤 הזמן הרצאה עכשיו</a>
-        <a class="button alt" href="#contact">📧 צור קשר</a>
+        <a class="button" href="lecture.html">הזמן הרצאה</a>
+        <a class="button alt" href="lecture.html">פרטים נוספים</a>
       </div>
     </section>
 
     <footer class="footer">
       <div class="footer-content">
-        <p>© 2025 יובל מעתוק - כל הזכויות שמורות</p>
+        <p>© 2025 יובל מעתוק</p>
         <p style="margin-top: 8px; font-size: 12px; opacity: 0.7;">
-          מסע של השראה, קבלה וצמיחה 🌱
+          מסע של השראה, קבלה וצמיחה
         </p>
       </div>
     </footer>
@@ -194,7 +156,7 @@
       setTimeout(() => {
         document.getElementById('pageLoader').classList.add('hidden');
         document.querySelector('.container').classList.remove('loading');
-      }, 1500);
+      }, 800);
     });
 
     // Scroll Progress Indicator
@@ -206,7 +168,7 @@
       scrollProgress.style.width = scrolled + '%';
     });
 
-    // Enhanced Carousel with touch support and keyboard navigation
+    // Enhanced Carousel
     (function(){
       const track = document.getElementById('track');
       const slides = Array.from(track.children);
@@ -227,16 +189,10 @@
       const dots = Array.from(dotsWrap.children);
       let index = 0;
       let timer;
-      let isUserInteracting = false;
 
       function update(){
         track.style.transform = `translateX(${-index*100}%)`;
         dots.forEach((d,i)=>d.classList.toggle('active', i===index));
-        
-        // Update slide attributes for accessibility
-        slides.forEach((slide, i) => {
-          slide.setAttribute('aria-hidden', i !== index);
-        });
       }
 
       function go(i){
@@ -255,44 +211,21 @@
 
       function restart(){
         clearInterval(timer);
-        if (!isUserInteracting) {
-          timer = setInterval(nextSlide, 4000);
-        }
+        timer = setInterval(nextSlide, 4000);
       }
 
-      // Event listeners
-      prev.addEventListener('click', () => {
-        isUserInteracting = true;
-        prevSlide();
-        setTimeout(() => { isUserInteracting = false; restart(); }, 3000);
-      });
-
-      next.addEventListener('click', () => {
-        isUserInteracting = true;
-        nextSlide();
-        setTimeout(() => { isUserInteracting = false; restart(); }, 3000);
-      });
-
-      // Keyboard navigation
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-          prevSlide();
-        } else if (e.key === 'ArrowRight') {
-          nextSlide();
-        }
-      });
+      prev.addEventListener('click', prevSlide);
+      next.addEventListener('click', nextSlide);
 
       // Touch support
       let startX = 0;
-      let endX = 0;
 
       track.addEventListener('touchstart', (e) => {
         startX = e.touches[0].clientX;
-        isUserInteracting = true;
       });
 
       track.addEventListener('touchend', (e) => {
-        endX = e.changedTouches[0].clientX;
+        const endX = e.changedTouches[0].clientX;
         const diffX = startX - endX;
         
         if (Math.abs(diffX) > 50) {
@@ -302,31 +235,22 @@
             prevSlide();
           }
         }
-        setTimeout(() => { isUserInteracting = false; restart(); }, 3000);
       });
 
       restart();
       update();
     })();
 
-    // Enhanced Scroll Reveal with intersection observer
-    const observerOptions = {
-      threshold: 0.15,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
+    // Scroll Reveal
     const observer = new IntersectionObserver(entries => {
-      entries.forEach((entry, index) => {
+      entries.forEach(entry => {
         if(entry.isIntersecting){
-          setTimeout(() => {
-            entry.target.classList.add('show');
-          }, index * 100);
+          entry.target.classList.add('show');
           observer.unobserve(entry.target);
         }
       });
-    }, observerOptions);
+    }, { threshold: 0.15 });
 
-    // Observe all reveal elements
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     });
@@ -383,18 +307,6 @@
         }
       });
     });
-
-    // Add hover effects to buttons
-    document.querySelectorAll('.button').forEach(button => {
-      button.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-2px) scale(1.02)';
-      });
-      
-      button.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
-      });
-    });
-
   </script>
 </body>
 </html>
