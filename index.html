@@ -2,68 +2,63 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>יובל מעתוק – דף מרצה</title>
-  <meta name="description" content="יובל מעתוק – מרצה מעוררת השראה. מעבר לדף ההרצאה 'להיות שונה זו לא קללה' בלחיצה." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <div style="font-weight:700">יובל מעתוק</div>
+      <div class="brand">יובל מעתוק</div>
       <nav class="nav">
         <a href="index.html" class="active">דף יובל</a>
-        <a href="lecture.html">דף ההרצאה</a>
+        <a href="lecture.html">הרצאה</a>
       </nav>
     </header>
 
     <section class="hero">
       <h1>יובל מעתוק</h1>
-      <p>זוכת האח הגדול 2023, מרצה מעוררת השראה. מסע אישי על שונות, קבלה וחוסן.</p>
+      <p>מסע אישי על שונות, קבלה והגשמה – עם חיוך ויד פתוחה.</p>
       <div class="cta-row">
         <a class="button" href="lecture.html">לעמוד ההרצאה</a>
-        <a class="button alt" href="#gallery">גלריית תמונות</a>
+        <a class="button alt" href="#gallery">גלריה</a>
       </div>
     </section>
 
-    <!-- Carousel -->
-    <section id="gallery" class="card" style="margin-top:16px">
-      <h2 style="margin-top:0">גלריה</h2>
-      <div class="carousel" aria-label="גלריית תמונות של יובל">
+    <section id="gallery" class="card reveal" style="margin-top: 24px">
+      <h2>גלריית תמונות</h2>
+      <div class="carousel" aria-label="גלריית תמונות">
         <div class="carousel-track" id="track">
-          <!-- Slides use your assets -->
-          <div class="carousel-slide"><img src="assets/yu1.jpeg" alt="יובל - תמונה 1"></div>
-          <div class="carousel-slide"><img src="assets/yu2.jpeg" alt="יובל - תמונה 2"></div>
-          <div class="carousel-slide"><img src="assets/yu3.jpeg" alt="יובל - תמונה 3"></div>
-          <div class="carousel-slide"><img src="assets/yu4.jpeg" alt="יובל - תמונה 4"></div>
-          <div class="carousel-slide"><img src="assets/yu5.jpeg" alt="יובל - תמונה 5"></div>
+          <div class="carousel-slide"><img src="assets/yu1.jpeg" alt="יובל 1"></div>
+          <div class="carousel-slide"><img src="assets/yu2.jpeg" alt="יובל 2"></div>
+          <div class="carousel-slide"><img src="assets/yu3.jpeg" alt="יובל 3"></div>
         </div>
         <button class="carousel-btn carousel-prev" id="prev" aria-label="הקודם">‹</button>
         <button class="carousel-btn carousel-next" id="next" aria-label="הבא">›</button>
-        <div class="carousel-dots" id="dots" aria-label="בחירת שקופית"></div>
+        <div class="carousel-dots" id="dots"></div>
       </div>
     </section>
 
-    <section class="grid" style="margin-top:16px">
-      <div class="col-6 card">
-        <h2 style="margin-top:0">על יובל</h2>
-        <p style="color:#b7bcc8">גדלה לצד אח תאום עם מוגבלות שכלית – מסע שהפך למקור כוח ושינוי. עם אותנטיות, הומור ותקווה.</p>
+    <section class="grid" style="margin-top: 24px">
+      <div class="col-6 card reveal">
+        <h2>על יובל</h2>
+        <p style="color: var(--muted)">גדלה לצד אח תאום עם מוגבלות – ויצאה מזה עם כוח ונחישות.</p>
       </div>
-      <div class="col-6 card">
-        <h2 style="margin-top:0">נושאים מרכזיים</h2>
+      <div class="col-6 card reveal">
+        <h2>נושאים מרכזיים</h2>
         <ul class="list">
-          <li>שונות ככוח, לא כמגבלה</li>
-          <li>חוסן, מוטיבציה והשראה</li>
-          <li>אמפתיה וקבלת האחר</li>
+          <li>שונות היא כוח</li>
+          <li>חוסן עם חיוך</li>
+          <li>אמפתיה וקבלה</li>
         </ul>
       </div>
     </section>
 
-    <section class="card" style="margin-top:16px">
-      <h2 style="margin-top:0">להזמנת הרצאה</h2>
-      <p style="color:#b7bcc8">רוצים פרטים? עברו לדף ההרצאה והשאירו פרטים בטופס.</p>
+    <section class="card reveal" style="margin-top: 24px">
+      <h2>להזמנת הרצאה</h2>
+      <p style="color: var(--muted)">מעבר עמוד ההרצאה להזמנה בטופס נוח.</p>
       <div class="cta-row">
-        <a class="button" href="lecture.html">לעמוד ההרצאה</a>
+        <a class="button" href="lecture.html">הרצאה</a>
       </div>
     </section>
 
@@ -71,7 +66,6 @@
   </div>
 
   <script>
-    // Simple vanilla carousel (RTL-friendly)
     (function(){
       const track = document.getElementById('track');
       const slides = Array.from(track.children);
@@ -79,35 +73,44 @@
       const next = document.getElementById('next');
       const dotsWrap = document.getElementById('dots');
 
-      // Build dots
       slides.forEach((_,i)=>{
-        const b=document.createElement('button');
-        b.className='carousel-dot'+(i===0?' active':'');
-        b.setAttribute('aria-label','שקופית '+(i+1));
-        b.addEventListener('click',()=>go(i));
+        const b = document.createElement('button');
+        b.className = 'carousel-dot' + (i===0?' active':'');
+        b.setAttribute('aria-label','שקופית ' + (i+1));
+        b.addEventListener('click', () => go(i));
         dotsWrap.appendChild(b);
       });
       const dots = Array.from(dotsWrap.children);
-
-      let index = 0, timer;
+      let index=0, timer;
 
       function update(){
-        track.style.transform = 'translateX(' + (-index*100) + '%)';
+        track.style.transform = `translateX(${-index*100}%)`;
         dots.forEach((d,i)=>d.classList.toggle('active', i===index));
       }
       function go(i){
-        index = (i+slides.length)%slides.length;
+        index = (i + slides.length) % slides.length;
         update(); restart();
       }
-      function nextSlide(){ go(index+1); }
-      function prevSlide(){ go(index-1); }
+      function nextSlide(){ go(index+1) }
+      function prevSlide(){ go(index-1) }
       function restart(){
         clearInterval(timer);
-        timer = setInterval(nextSlide, 4000);
+        timer = setInterval(nextSlide, 5000);
       }
       prev.addEventListener('click', prevSlide);
       next.addEventListener('click', nextSlide);
       restart();
+
+      // Scroll reveal
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if(e.isIntersecting){
+            e.target.classList.add('show');
+            io.unobserve(e.target);
+          }
+        });
+      }, {threshold: .15});
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
     })();
   </script>
 </body>
