@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>להיות שונה זו לא קללה – יובל מעתוק</title>
   <meta name="description" content="הרצאה מרתקת על קבלה, חוסן והשראה - עם יובל מעתוק. הזמינו הרצאה מרתקת לעמוד בפני אתגרים">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Page Loader -->
   <div class="page-loader" id="pageLoader">
-    <div class="loader"></div>
-    <div class="loader-text">טוען...</div>
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <h3>יובל מעתוק</h3>
+      <p>טוען...</p>
+    </div>
   </div>
 
   <!-- Scroll Progress Indicator -->
@@ -21,16 +25,16 @@
     <div class="scroll-progress" id="scrollProgress"></div>
   </div>
 
-  <div class="container">
-    <header class="header reveal">
-      <div class="brand">להיות שונה זו לא קללה</div>
+  <div class="container loading">
+    <header class="header">
+      <div class="brand">יובל מעתוק</div>
       <nav class="nav">
-        <a href="index.html">דף יובל</a>
+        <a href="index.html">בית</a>
         <a href="lecture.html" class="active">הרצאה</a>
       </nav>
     </header>
 
-    <section class="hero reveal">
+    <section class="hero">
       <h1>להיות שונה זו לא קללה</h1>
       <p>הרצאה מרתקת על קבלה, חוסן והשראה – עם כלים של ממש לחיים יותר טובים.</p>
       <div class="cta-row">
@@ -42,44 +46,44 @@
     <!-- Benefits Section -->
     <section class="grid" style="margin-top: 40px">
       <div class="col-6 card reveal">
-        <h2>💡 מה מרוויחים מההרצאה</h2>
+        <h2>מה מרוויחים מההרצאה</h2>
         <div class="feature-list">
           <div class="feature-item">
-            <div class="feature-icon">🤝</div>
+            <span class="feature-icon">•</span>
             <span>כלים מעשיים לחיזוק צוותים ושיתוף פעולה</span>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">❤️</div>
-            <span>סיפור אישי מרתק שממחבר ומעשיר</span>
+            <span class="feature-icon">•</span>
+            <span>סיפור אישי מרתק שמחבר ומעשיר</span>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">🌟</div>
+            <span class="feature-icon">•</span>
             <span>מסרים עמוקים של אמפתיה ונחישות</span>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">💪</div>
+            <span class="feature-icon">•</span>
             <span>טכניקות להתמודדות עם אתגרים</span>
           </div>
         </div>
       </div>
 
       <div class="col-6 card reveal">
-        <h2>🎯 למי מתאימה ההרצאה</h2>
+        <h2>למי מתאימה ההרצאה</h2>
         <div class="feature-list">
           <div class="feature-item">
-            <div class="feature-icon">🏢</div>
+            <span class="feature-icon">•</span>
             <span>ארגונים עסקיים וימי עיון מקצועיים</span>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">🎓</div>
+            <span class="feature-icon">•</span>
             <span>מוסדות חינוך ואקדמיה</span>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">🤲</div>
+            <span class="feature-icon">•</span>
             <span>עמותות וארגונים חברתיים</span>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">👥</div>
+            <span class="feature-icon">•</span>
             <span>קהילות ומנהיגות נוער</span>
           </div>
         </div>
@@ -87,28 +91,25 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="card reveal" style="margin-top: 40px;">
-      <h2 style="text-align: center; margin-bottom: 30px;">📊 במספרים</h2>
-      <div class="grid">
-        <div class="col-4">
-          <div class="stat-number" data-count="500">0</div>
-          <div class="stat-label">משתתפים בהרצאות</div>
-        </div>
-        <div class="col-4">
-          <div class="stat-number" data-count="50">0</div>
-          <div class="stat-label">ארגונים שהתארחו</div>
-        </div>
-        <div class="col-4">
-          <div class="stat-number" data-count="95">0</div>
-          <div class="stat-label">% שביעות רצון</div>
-        </div>
+    <section class="grid" style="margin-top: 40px;">
+      <div class="col-4 card reveal">
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-label">משתתפים בהרצאות</div>
+      </div>
+      <div class="col-4 card reveal">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-label">ארגונים שהתארחו</div>
+      </div>
+      <div class="col-4 card reveal">
+        <div class="stat-number" data-target="95">0</div>
+        <div class="stat-label">% שביעות רצון</div>
       </div>
     </section>
 
     <!-- Contact Form Section -->
     <section id="contact" class="card reveal" style="margin-top: 40px">
-      <h2>📞 השאירו פרטים והזמינו הרצאה</h2>
-      <p style="color: var(--muted); margin-bottom: 20px;">
+      <h2>השאירו פרטים והזמינו הרצאה</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px;">
         מלאו את הפרטים ונחזור אליכם בהקדם עם הצעה מותאמת אישית
       </p>
 
@@ -195,131 +196,145 @@
         </div>
         
         <div class="cta-row" style="margin-top: 20px">
-          <button class="button" type="submit">
-            📨 שלחו בקשה
-          </button>
-          <a class="button alt" href="index.html">
-            🏠 חזרה לעמוד הראשי
-          </a>
+          <button class="button" type="submit">שלחו בקשה</button>
+          <a class="button alt" href="index.html">חזרה לעמוד הראשי</a>
         </div>
       </form>
 
       <div class="form-notice">
-        <p>
-          <strong>💡 טיפ:</strong> ככל שתספקו יותר פרטים, נוכל להתאים לכם הצעה מדויקת יותר.
+        <p style="color: var(--text-secondary); font-size: 14px;">
+          <strong>טיפ:</strong> ככל שתספקו יותר פרטים, נוכל להתאים לכם הצעה מדויקת יותר.
           <br>
-          ⚡ נחזור אליכם בתוך 24 שעות!
+          נחזור אליכם בתוך 24 שעות!
         </p>
       </div>
     </section>
 
     <!-- Benefits Grid -->
     <section class="card reveal" style="margin-top: 40px">
-      <h2 style="text-align: center; margin-bottom: 30px;">🎁 מה תקבלו בהרצאה</h2>
-      <div class="benefits-grid">
-        <div class="benefit-item">
-          <div class="benefit-icon">🎤</div>
+      <h2 style="text-align: center; margin-bottom: 30px;">מה תקבלו בהרצאה</h2>
+      <div class="grid">
+        <div class="col-6 benefit-item">
           <h3>הרצאה מקצועית</h3>
           <p>מצגת מרתקת עם חוויה אישית מעוררת השראה</p>
         </div>
         
-        <div class="benefit-item">
-          <div class="benefit-icon">🛠️</div>
+        <div class="col-6 benefit-item">
           <h3>כלים מעשיים</h3>
           <p>טכניקות קונקרטיות שאפשר ליישם מיד בחיי היומיום</p>
         </div>
         
-        <div class="benefit-item">
-          <div class="benefit-icon">💬</div>
+        <div class="col-6 benefit-item">
           <h3>אינטראקציה</h3>
           <p>מעורבות הקהל ופעילויות חוויתיות במהלך ההרצאה</p>
         </div>
         
-        <div class="benefit-item">
-          <div class="benefit-icon">📚</div>
+        <div class="col-6 benefit-item">
           <h3>חומרי עזר</h3>
           <p>מדריכים וחומרי קריאה להמשך העיבוד האישי</p>
         </div>
       </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="card reveal" style="margin-top: 40px">
+      <h2 style="text-align: center; margin-bottom: 30px;">מה אומרים</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-text">"הרצאה מעוררת השראה שממש שינתה את התפיסה שלנו כארגון על שונות וקבלה"</div>
+          <div class="testimonial-author">מנכ"לית חברה הייטק</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-text">"יובל הצליחה לחבר בין הלב לשכל בצורה מרגשת ומקצועית"</div>
+          <div class="testimonial-author">רכזת חינוכית</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-text">"כלים מעשיים שהצוות שלנו ממשיך להשתמש בהם גם חודשים אחרי ההרצאה"</div>
+          <div class="testimonial-author">מנהל משאבי אנוש</div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-content">
-        <p>© 2024 יובל מעתוק - להיות שונה זו לא קללה</p>
+        <p>© 2025 יובל מעתוק</p>
         <p style="margin-top: 8px; font-size: 12px; opacity: 0.7;">
-          הרצאות מעוררות השראה | כלים לחיים טובים יותר | סיפור שמחבר
+          הרצאות מעוררות השראה | כלים לחיים טובים יותר
         </p>
       </div>
     </footer>
   </div>
 
   <script>
-    // Page loader
+    // Page Loading Animation
     window.addEventListener('load', function() {
       setTimeout(() => {
         document.getElementById('pageLoader').classList.add('hidden');
+        document.querySelector('.container').classList.remove('loading');
       }, 800);
     });
 
-    // Scroll progress indicator
+    // Scroll Progress Indicator
     window.addEventListener('scroll', function() {
-      const scrolled = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      document.getElementById('scrollProgress').style.width = scrolled + '%';
+      const scrollProgress = document.getElementById('scrollProgress');
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (scrollTop / scrollHeight) * 100;
+      scrollProgress.style.width = scrolled + '%';
     });
 
-    // Reveal elements on scroll
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
+    // Scroll Reveal
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if(entry.isIntersecting){
           entry.target.classList.add('show');
+          observer.unobserve(entry.target);
         }
       });
-    }, observerOptions);
+    }, { threshold: 0.15 });
 
-    document.querySelectorAll('.reveal').forEach(el => {
-      observer.observe(el);
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     });
 
-    // Stats counter animation
-    function animateCounters() {
-      const counters = document.querySelectorAll('.stat-number[data-count]');
-      
-      counters.forEach(counter => {
-        const target = parseInt(counter.dataset.count);
-        const duration = 2000;
-        const step = target / (duration / 16);
-        let current = 0;
-        
-        const timer = setInterval(() => {
-          current += step;
-          if (current >= target) {
-            current = target;
-            clearInterval(timer);
-          }
-          counter.textContent = Math.floor(current);
-        }, 16);
-      });
+    // Animated Counter for Stats
+    function animateCounter(element) {
+      const target = parseInt(element.getAttribute('data-target'));
+      const duration = 2000;
+      const increment = target / (duration / 16);
+      let current = 0;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = target + (target === 95 ? '%' : '+');
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current) + (target === 95 ? '%' : '+');
+        }
+      }, 16);
     }
 
-    // Trigger counter animation when stats section is visible
-    const statsObserver = new IntersectionObserver(function(entries) {
+    // Trigger counters when visible
+    const statObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          animateCounters();
-          statsObserver.unobserve(entry.target);
+          const statNumber = entry.target.querySelector('.stat-number');
+          if (statNumber && !statNumber.classList.contains('animated')) {
+            statNumber.classList.add('animated');
+            animateCounter(statNumber);
+          }
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.card').forEach(card => {
+        if (card.querySelector('.stat-number')) {
+          statObserver.observe(card);
         }
       });
     });
-
-    const statsSection = document.querySelector('.stat-number');
-    if (statsSection) {
-      statsObserver.observe(statsSection.closest('.card'));
-    }
 
     // Form enhancements
     const formInputs = document.querySelectorAll('.form-input');
@@ -327,11 +342,11 @@
     formInputs.forEach(input => {
       // Add focus effects
       input.addEventListener('focus', function() {
-        this.closest('.col-6, .col-12').classList.add('focused');
+        this.style.borderColor = 'var(--primary)';
       });
       
       input.addEventListener('blur', function() {
-        this.closest('.col-6, .col-12').classList.remove('focused');
+        this.style.borderColor = 'rgba(255,255,255,0.1)';
       });
       
       // Auto-resize textarea
@@ -347,15 +362,19 @@
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
       contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
         const submitBtn = this.querySelector('button[type="submit"]');
-        submitBtn.innerHTML = '📤 שולח...';
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'שולח...';
         submitBtn.disabled = true;
         
-        // Reset after delay (for demo purposes)
+        // Simulate form submission
         setTimeout(() => {
-          submitBtn.innerHTML = '📨 שלחו בקשה';
+          alert('תודה! הבקשה נשלחה בהצלחה. נחזור אליכם בהקדם.');
+          submitBtn.innerHTML = originalText;
           submitBtn.disabled = false;
-        }, 3000);
+          contactForm.reset();
+        }, 2000);
       });
     }
 
